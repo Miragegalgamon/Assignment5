@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Mania</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+</head>
+
+<body class="bg-slate-800 text-white ">
+    <header class="bg-black flex ">
+        <div>
+            <img class="pt-5 w-full" src="image/cover (1) (Phone).png" alt="">
+        </div>
+        <div class="mx-5" Id="headerText">
+            <h1 class="text-5xl text-orange-300 text-center uppercase py-5" id="headerTitle">The New Generation of Miracles</h1>
+            <p class="text-2xl text-white text-center">As the ages Pass a ne generation of mirracle players are to be chosen. Chose 5 Players who would be taken on an intensive Training Camp</p>
+        </div>
+
+        <div>
+            <img class="pt-5 w-full" id="lext-img" src="image/cover (3) (Phone).png" alt="">
+        </div>
+
+
+    </header>
+    <main class="container mx-auto px-9">
+        <section>
+
+            <div class="my-5 grid grid-cols-4 gap-4">
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full " src="image/Player (1).jpg" alt="">
+                        <h1 id="name-Neymar"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Tetsuya Kuroko
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                0 Goals : 
+                            </h3>
+                            <h3 class="text-white">
+                                 1500 Assists
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center px-7 py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full " src="image/Player (11).jpg" alt="">
+                        <h1 id="name-Kylian"
+                            class=" text-center   mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Ryōta Kise 
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                35 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                105 Assist
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full" src="image/Player (2).jpg" alt="">
+                        <h1 id="name-Machado"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Shintarō Midorima
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                100 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                0 Assist
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div id="Selected-fild"
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class=" mx-5 px-4 ">
+
+                        <h1 class=" text-2xl text-center text-white mt-2 ">Selected - V</h1>
+                        <ol id="selectList" class="list-decimal">
+
+                        </ol>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <section>
+            <div class="my-5 grid grid-cols-4 gap-4">
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full" src="image/Player (3).jpg" alt="">
+                        <h1 id="name-Sergio"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Atsushi Murasakibara
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                131 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                14 Assist
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full h" src="image/Player (4).jpg" alt="">
+                        <h1 id="name-Sanches"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Seijūrō Akashi
+                        </h1>
+                        <div class="flex justify-center">
+                            <h3 class="text-white">
+                                52 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                220 Assist
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full" src="image/Player (5).jpg" alt="">
+                        <h1 id="name-DODIS"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Shun Izuki
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                36 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                120 Assist
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="Budget-fuild"
+                    class="row-span-2 max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+
+                    <div class="mx-1">
+                        <h1 class=" text-2xl text-center text-white mt-2">Budget</h1>
+                        <div class="flex justify-between my-3">
+                            <h3 class="text-lg text-white mt-2">Per Player</h3>
+                            <input id="Per-Player-fuild"
+                                class="w-40 bg-slate-400 rounded-lg text-white font-semibold text" type="tel" name=""
+                                onfocus="this.value=''" value="0">
+                        </div>
+                        <button id="btn-Calculate"
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit">
+                            <p class="flex mx-auto">Calculate</p>
+                        </button>
+                        <h1>Player Expenses: $<span id="Player-Expenses">0</span></h1>
+                        <div class="flex justify-between  my-3">
+                            <h3 class="text-lg text-white mt-2">Manager</h3>
+                            <input id="Manager-fuild" class="w-40 bg-slate-400 rounded-lg text-white font-semibold text"
+                                type="tel" name="" onfocus="this.value=''" value="0">
+                        </div>
+                        <div class="flex justify-between  my-3">
+                            <h3 class="text-lg text-white mt-2">Coach</h3>
+                            <input id="Coach-fuild" class="w-40 bg-slate-400 rounded-lg text-white font-semibold text"
+                                type="tel" name="" onfocus="this.value=''" value="0">
+                        </div>
+                        <button id="btn-Calculate-total"
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit">
+                            <p class="flex mx-auto">Calculate-total</p>
+                        </button>
+                        <div class="flex justify-between">
+                            <h1>Total</h1>
+                            <h1 id="Total-balance"></h1>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full" src="image/Player (6).jpg" alt="">
+                        <h1 id="name-Maradona"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Junpei Hyūga
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                30 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                100 Assist
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full" src="image/Player (7).jpg" alt="">
+                        <h1 id="name-Robert"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Daiki Aomine
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                               650 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                15 Assist
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                    <div class="">
+                        <img class="rounded-lg w-full" src="image/Player (8).jpg" alt="">
+                        <h1 id="name-Ronaldo"
+                            class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                            Shōgo Haizaki
+                        </h1>
+                        <div class="flex justify-center  ">
+                            <h3 class="text-white">
+                                30 Goals :
+                            </h3>
+                            <h3 class="text-white">
+                                111Assist
+                            </h3>
+                        </div>
+                        <button 
+                            class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                            onclick="selectPlayer(this);this.disabled = true">
+                            <p class="flex mx-auto">SELECT</p>
+                        </button>
+                    </div>
+                </div>
+                <div
+                class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                <div class="">
+                    <img class="rounded-lg w-full" src="image/Player (9).jpg" alt="">
+                    <h1 id="name-Maradona"
+                        class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                        Taiga Kagami
+                    </h1>
+                    <div class="flex justify-center  ">
+                        <h3 class="text-white">
+                            30 Goals :
+                        </h3>
+                        <h3 class="text-white">
+                            150 Assist
+                        </h3>
+                    </div>
+                    <button 
+                        class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                        onclick="selectPlayer(this);this.disabled = true">
+                        <p class="flex mx-auto">SELECT</p>
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                <div class="">
+                    <img class="rounded-lg w-full" src="image/Player (10).jpg" alt="">
+                    <h1 id="name-Robert"
+                        class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                        Shūzō Nijimura
+                    </h1>
+                    <div class="flex justify-center  ">
+                        <h3 class="text-white">
+                            31 Goals :
+                        </h3>
+                        <h3 class="text-white">
+                            110 Assist
+                        </h3>
+                    </div>
+                    <button 
+                        class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                        onclick="selectPlayer(this);this.disabled = true">
+                        <p class="flex mx-auto">SELECT</p>
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class=" max-w-sm bg-slate-800 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+
+                <div class="">
+                    <img class="rounded-lg w-full" src="image/Player (12).jpg" alt="">
+                    <h1 id="name-Ronaldo"
+                        class=" text-center  font-semibold mx-auto mt-5 text-2xl  text-white dark:text-gray-400">
+                        Teppei Kiyoshi
+                    </h1>
+                    <div class="flex justify-center  ">
+                        <h3 class="text-white">
+                            30 Goals :
+                        </h3>
+                        <h3 class="text-white">
+                            111Assist
+                        </h3>
+                    </div>
+                    <button 
+                        class="bg-indigo-500/100 text-center py-2 my-5 w-full rounded-lg flex mx-auto " type="submit"
+                        onclick="selectPlayer(this);this.disabled = true">
+                        <p class="flex mx-auto">SELECT</p>
+                    </button>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
